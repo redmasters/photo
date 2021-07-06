@@ -23,9 +23,9 @@ nav {
 
 :root {
     font-size: 62.5%;
-    --background: #0F0F0F;
-    --text-logo: #fafafa;
-    --text: white;
+    --black: #0F0F0F;
+    --white: #f5f5f5;
+    --white-light: #ffffff;
 }
 
 html {
@@ -35,8 +35,9 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 3.0rem;
-    background: var(--background);
-    color: var(--text)
+
+    background: var(--black);
+    color: var(--white)
 }
 
 .grid {
@@ -76,6 +77,7 @@ body {
     color: var(--text-logo);
 
     margin-top: 40rem;
+    line-height: 5rem;
     text-align: center;
 
 }
@@ -93,6 +95,9 @@ body {
     font-size: 2.0rem;
 }
 
+#works {
+    height: 100vh;
+}
 .photo-card {
     margin: 5rem 5rem;
     display: flex;
@@ -112,7 +117,12 @@ body {
 }
 
 .description {
-    grid-template: 0.5rem 1fr / .2rem 2fr .2rem;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: min(12rem, 0.2rem);
+    margin-right: min(12rem, 0.2rem);
+    grid-template-columns: 2fr 1fr;
 }
 
 .description h2{
@@ -124,4 +134,39 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
+}
+
+.title {
+    text-align: right;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+}
+.plans {
+    padding-top: 8rem;
+    background: var(--white);
+    color: var(--black);
+}
+
+
+.cards {
+    text-align: center;
+
+}
+
+
+.card > li{
+
+    background: ;
+    border-radius: .5rem;
+    border: 1px solid;
+    box-shadow: var(--white-light) 1px;
+
+    margin: 4rem;
+
+}
+
+.divider {
+    margin: 0 5rem;
+    border: 3px solid var(--black);
+    width: 80%;
 }
