@@ -17,25 +17,111 @@ a {
     text-decoration: none;
 }
 
+nav {
+    text-align: center;
+}
+
 :root {
-    --background: #000 ;
-    --white: hsl(180, 25, 97);
+    font-size: 62.5%;
+    --background: #0F0F0F;
+    --text-logo: #fafafa;
+    --text: white;
+}
+
+html {
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 3.0rem;
+    background: var(--background);
+    color: var(--text)
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.container {
+    padding-top: 3rem;
+    padding: 0 3rem;
 }
 
 .logo {
-    font-family: sans-serif;
-    color: #fff;
+    font-family: 'Secular One', sans-serif;
+    font-size: 2.0rem;
+    font-weight: 700;
+    color: var(--text-logo);
 }
 
-.menu {
-    display: inline-flex;
-
-}
 
 .cover {
-    background: url('https://images.unsplash.com/photo-1524041255072-7da0525d6b34?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80') no-repeat;
+    background: url('https://images.unsplash.com/photo-1625486065199-0282e85be8e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1300&q=80') no-repeat;
     background-size: cover;
     
     width: 100%;
     height: 100vh;
+}
+
+.menu {
+
+}
+
+.photo-caption {
+    font-family: 'Lato', sans-serif;
+    font-size: 8rem;
+    font-weight: 700;
+    color: var(--text-logo);
+
+    margin-top: 40rem;
+    text-align: center;
+
+}
+
+.weare {
+    font-family: 'Cinzel', serif ;
+    font-size: 8.0rem;
+    font-weight: 400;
+    color: var(--text-logo);
+
+}
+
+.caption {
+    font-family: 'Cinzel', serif;
+    font-size: 2.0rem;
+}
+
+.photo-card {
+    margin: 5rem 5rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.photo-card  li img {
+    border-radius: .5rem;
+    box-shadow: 0 0 1px #0F0F0F;
+
+}
+
+.photo-card > li > img {
+    width: 90%;
+    height: auto;
+}
+
+.description {
+    grid-template: 0.5rem 1fr / .2rem 2fr .2rem;
+}
+
+.description h2{
+    font-family: 'Cinzel', serif;
+}
+
+
+.description p.caption {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
 }
